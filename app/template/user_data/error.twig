@@ -1,0 +1,13 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+<div class="ec-role">
+    <div class="ec-pageHeader">
+        <h1>{{ '内部エラーが発生しました'|trans }}</h1>
+        <h3>繰り返し発生する場合はシステム管理者にお問い合わせください</h3>
+        <li class="ec-footerNavi__link">
+            <a href="{{ url('homepage') }}">{{ 'TOPページ'|trans }}</a>
+        </li>
+    </div>
+</div>
+{% endblock %}
