@@ -58,6 +58,15 @@ file that was distributed with this source code.
                                 {{ form_widget(form.company_name, { type : 'hidden' }) }}
                             </dd>
                         </dl>
+                         <dl>
+                            <dt>
+                                {{ form_label(form.department_name, '部署名', { 'label_attr': { 'class': 'ec-label'}}) }}
+                            </dt>
+                            <dd>
+                                {{ form.department_name.vars.data }}
+                                {{ form_widget(form.department_name, { type : 'hidden' }) }}
+                            </dd>
+                        </dl>
                         <dl>
                             <dt>
                                 {{ form_label(form.address, '住所', { 'label_attr': { 'class': 'ec-label' }}) }}

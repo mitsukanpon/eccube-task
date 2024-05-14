@@ -513,6 +513,8 @@ admin.common.first_name: 名
 admin.common.last_name: 姓
 admin.common.company_name: 会社名
 admin.common.company_name_kana: 会社名(カナ)
+admin.common.department_name: 部署名
+admin.common.department_name_kana: 部署名(カナ)
 admin.common.address: 住所
 admin.common.pref: 都道府県
 admin.common.postal_symbol: 〒

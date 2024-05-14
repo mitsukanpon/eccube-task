@@ -77,6 +77,13 @@ if (!class_exists('\Eccube\Entity\Customer')) {
 
         /**
          * @var string|null
+         * @ORM\Column(name="department_name", type="string", length=255, nullable=true)
+         * 
+         */
+        private $department_name;
+
+        /**
+         * @var string|null
          *
          * @ORM\Column(name="postal_code", type="string", length=8, nullable=true)
          */
@@ -470,6 +477,26 @@ if (!class_exists('\Eccube\Entity\Customer')) {
         public function getCompanyName()
         {
             return $this->company_name;
+        }
+
+        /**
+         * Set departmentName.
+         * 
+         */
+        public function setDepartmentName($departmentName = null)
+        {
+            $this->department_name = $departmentName;
+
+            return $this;
+        }
+
+        /**
+         * Get departmentName.
+         * 
+         */
+        public function getDepartmentName()
+        {
+            return $this->department_name;
         }
 
         /**

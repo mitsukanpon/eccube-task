@@ -75,6 +75,18 @@ class CustomerType extends AbstractType
                     ]),
                 ],
             ])
+      ->add(
+        'department_name',
+        TextType::class,
+        [
+          'required' => false,
+          'constraints' => [
+            new Assert\Length([
+              'max' => $this->eccubeConfig['eccube_stext_len'],
+            ]),
+          ],
+        ]
+      )
             ->add('postal_code', PostalType::class, [
                 'required' => true,
             ])

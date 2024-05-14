@@ -70,6 +70,14 @@ class EntryType extends AbstractType
                     ]),
                 ],
             ])
+            ->add('department_name', TextType::class, [
+                'required' => false,
+                'constraints' => [
+                    new Assert\Length([
+                        'max' => $this->eccubeConfig['eccube_stext_len'],
+                    ]),
+                ],
+            ])
             ->add('postal_code', PostalType::class)
             ->add('address', AddressType::class)
             ->add('phone_number', PhoneNumberType::class, [
