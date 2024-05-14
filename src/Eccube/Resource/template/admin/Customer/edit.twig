@@ -118,6 +118,15 @@ file that was distributed with this source code.
                                     </div>
                                 </div>
                                 <div class="row mb-2">
+                                    <div class="col-3">
+                                        <span>{{ 'admin.common.department_name'|trans }}</span>
+                                    </div>
+                                    <div class="col">
+                                        {{ form_widget(form.department_name) }}
+                                        {{ form_errors(form.department_name) }}
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
                                     <div class="col-3"><span>{{ 'admin.common.address'|trans }}</span><span
                                                 class="badge bg-primary ms-1">{{ 'admin.common.required'|trans }}</span>
                                     </div>

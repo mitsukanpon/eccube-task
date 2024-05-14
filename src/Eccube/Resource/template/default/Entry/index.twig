@@ -68,6 +68,17 @@ file that was distributed with this source code.
                         </dl>
                         <dl>
                             <dt>
+                                {{ form_label(form.department_name, '部署名', { 'label_attr': { 'class': 'ec-label' }}) }}
+                            </dt>
+                            <dd>
+                                <div class="ec-halfInput{{ has_errors(form.department_name) ? ' error' }}">
+                                    {{ form_widget(form.department_name) }}
+                                    {{ form_errors(form.department_name) }}
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
                                 {{ form_label(form.address, '住所', { 'label_attr': { 'class': 'ec-label' }}) }}
                             </dt>
                             <dd>
